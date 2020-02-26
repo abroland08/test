@@ -832,6 +832,7 @@ hr {
 .footer-inner {
     margin-bottom: 65px;
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-col--first {
@@ -904,16 +905,18 @@ hr {
 
 .blogs-item {
     display: flex;
+    margin-bottom: 30px;
+    align-items: center;
 }
 
 .blogs-img {
-    width: 120px;
+    width: auto;
     height: 80px;
-    margin-right: 20px;
-    margin-left: 50px;
 }
 
-
+.blogs-content {
+    margin-left: 15px;
+}
 
 .blogs-content a {
     text-decoration: none;
@@ -933,11 +936,21 @@ hr {
     font-style: italic;
 }
 
+/* Instagram */
 
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.instagram-item {
+    flex: 1 1 0;
+    width: 30.3%;
+}
 
-
-
+.instagram-item img {
+    display: block;
+}
 
 /* Subscribe */
 
@@ -986,4 +999,5 @@ hr {
 .subscribe-btn:hover {
     background-color: #80c2b6;
 }
+
 
