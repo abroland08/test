@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets\css\style.css">
     <link
         href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap&subset=cyrillic-ext"
@@ -26,7 +26,12 @@
                     <a class="nav-link" href="#">Service</a>
                     <a class="nav-link" href="#">Work</a>
                     <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
                 </nav>
             </div>
         </div>
@@ -42,10 +47,18 @@
             </div>
 
             <div class="slider">
-                <div class="slider-item active"><span class="slider-num">1</span> Intro</div>
-                <div class="slider-item"><span class="slider-num">2</span> Work</div>
-                <div class="slider-item"><span class="slider-num">3</span> About</div>
-                <div class="slider-item"><span class="slider-num">4</span> Contact</div>
+                <div class="slider-item active"><span class="slider-num">1</span>
+                    <span class="slider-text">Intro</span>
+                </div>
+                <div class="slider-item"><span class="slider-num">2</span>
+                    <span class="slider-text">Work</span>
+                </div>
+                <div class="slider-item"><span class="slider-num">3</span>
+                    <span class="slider-text">About</span>
+                </div>
+                <div class="slider-item"><span class="slider-num">4</span>
+                    <span class="slider-text">Contacts</span>
+                </div>
             </div>
         </div>
     </div> <!-- ./intro -->
@@ -141,29 +154,26 @@
                 <h2 class="section-title">Amazing Services</h2>
             </div>
             <div class="services">
-                <div class="service-item">
+                <div class="service-item service-item--border">
                     <img class="ser-ico" src="./assets/images/2 section/ico (1).png" alt="">
                     <div class="ser-title">Photography</div>
                     <div class="ser-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor.</div>
                 </div>
 
-                <div class="service-item">
+                <div class="service-item service-item--border">
                     <img class="ser-ico" src="./assets/images/2 section/ico (2).png" alt="">
                     <div class="ser-title">Web Design</div>
                     <div class="ser-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </div>
                 </div>
 
-                <div class="service-item">
+                <div class="service-item service-item--border">
                     <img class="ser-ico" src="./assets/images/2 section/ico (3).png" alt="">
                     <div class="ser-title">Creativity</div>
                     <div class="ser-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-            </div>
-            <hr>
 
-            <div class="services">
                 <div class="service-item">
                     <img class="ser-ico" src="./assets/images/2 section/ico (4).png" alt="">
                     <div class="ser-title">seo</div>
@@ -181,7 +191,8 @@
                     <div class="ser-title">digital</div>
                     <div class="ser-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
                 </div>
-            </div>
+
+            </div> <!-- /.services -->
         </div> <!-- /.container -->
     </section>
 
@@ -745,6 +756,11 @@
                 </div>
 
             </div> <!-- /.footer-inner -->
+
+            <div class="copyright">
+                © 2016 MoGo free PSD template by <span>Laaqiq</span>
+            </div>
+
         </div> <!-- /.container -->
     </footer>
 
