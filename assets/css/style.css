@@ -421,6 +421,8 @@ hr {
 
 .devices-item {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .devices-item--iphone {
@@ -434,10 +436,18 @@ hr {
 
 .wedo {
     display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
+}
+
+.wedo-img {
+    width: 100%;
+    height: auto;
 }
 
 .wedo-item {
-    width: 50%
+    width: 50%;
+    padding: 0 15px;
 }
 
 /* Accordion */
@@ -511,6 +521,9 @@ hr {
 }
 
 .reviews-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 0;
     left: 0;
@@ -603,6 +616,17 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+
+.logos-item {
+    padding: 0 15px;
+}
+
+.logos-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Works */
@@ -717,6 +741,7 @@ hr {
 
 .blog {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1031,6 +1056,10 @@ hr {
     .intro-suptitle {
         font-size: 52px;
     }
+    /* Reviews */
+    .reviews-text {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1054,16 +1083,33 @@ hr {
     .stat-item:last-child {
         border: 0;
     }
-
     /* Services */
-
     .service-item {
         width: 50%;
         padding-bottom: 0;
     }
-
     .service-item--border {
         border: 0;
+    }
+    /* Reviews */
+    .reviews {
+        padding: 0 60px;
+    }
+
+    /* Clients */
+
+    .clients {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .clients-item {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .clients-item:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -1082,6 +1128,9 @@ hr {
     /* Section */
     .section {
         padding: 40px 0;
+    }
+    .section--service {
+        padding-bottom: 0;
     }
     /* slider */
     .slider-text {
@@ -1103,17 +1152,61 @@ hr {
     .card-item:last-child {
         margin-bottom: 0;
     }
-
     /* Services */
-
     .service-item {
         width: 100%;
         padding-left: 55px;
         padding-right: 0;
     }
-
     .ser-ico {
         left: 0;
+    }
+    /* We do */
+    .wedo-img {
+        display: none;
+    }
+    .wedo-item {
+        width: 100%;
+    }
+    /* Reviews */
+    .reviews-photo {
+        position: static;
+        margin: 0 auto 20px;
+    }
+    .reviews-item {
+        padding-left: 0;
+    }
+    .reviews-text {
+        font-size: 16px;
+    }
+    .reviews-author {
+        font-size: 20px;
+    }
+
+    /* Works */
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works-column {
+        flex: none;
+        width: 50%;
+    }
+
+    /* Blog */
+
+    .blog {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+    .blog-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blog-item:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -1143,4 +1236,61 @@ hr {
     .stat-count {
         font-size: 52px;
     }
+    /* Service */
+    .devices {
+        max-width: 320px;
+    }
+    .devices-item--iphone {
+        width: 180px;
+        bottom: -30px;
+        right: -80px;
+    }
+    /* Reviews */
+    .reviews {
+        padding: 0;
+    }
+
+    .reviews-btn {
+        top: 17%;
+    }
+
+    /* Logos */
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logos-img {
+        margin: 0 auto;
+    }
+
+    /* Works */
+
+    .works-column {
+        width: 100%;
+    }
+
+    /* Clients */
+
+    .clients-item {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .clients-img {
+        position: static;
+
+    }
+
+    .clients-text::before {
+        margin: 15px auto;
+    }
+
 }
